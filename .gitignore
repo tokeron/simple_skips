@@ -61,8 +61,7 @@ checkpoints/
 *.mov
 
 # Nested git repositories
-DiT-Knowledge-Localization/
-sandbox_diffusers/
+# DiT-Knowledge-Localization is now a submodule
 
 # OS
 .DS_Store
