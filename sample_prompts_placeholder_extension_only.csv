@@ -1,0 +1,241 @@
+subset,item_index,extension_index,original_item,placeholder,prompt_extension,prompt_specific,prompt_placeholder
+animals,0,0,a cow,an animal,as a charcoal drawing,a cow as a charcoal drawing,an animal as a charcoal drawing
+animals,0,17,a cow,an animal,under the rain,a cow under the rain,an animal under the rain
+animals,0,6,a cow,an animal,looking surprised,a cow looking surprised,an animal looking surprised
+animals,1,17,a zebra,an animal,under the rain,a zebra under the rain,an animal under the rain
+animals,1,13,a zebra,an animal,in origami style,a zebra in origami style,an animal in origami style
+animals,1,7,a zebra,an animal,crying softly,a zebra crying softly,an animal crying softly
+animals,2,14,a dog,an animal,made of clay,a dog made of clay,an animal made of clay
+animals,2,18,a dog,an animal,inside a snow globe,a dog inside a snow globe,an animal inside a snow globe
+animals,2,8,a dog,an animal,made of plastic,a dog made of plastic,an animal made of plastic
+animals,3,0,a camel,an animal,as a charcoal drawing,a camel as a charcoal drawing,an animal as a charcoal drawing
+animals,3,5,a camel,an animal,as a statue in an ancient temple,a camel as a statue in an ancient temple,an animal as a statue in an ancient temple
+animals,3,13,a camel,an animal,in origami style,a camel in origami style,an animal in origami style
+animals,4,10,a tiger,an animal,drinking water from a lake,a tiger drinking water from a lake,an animal drinking water from a lake
+animals,4,8,a tiger,an animal,made of plastic,a tiger made of plastic,an animal made of plastic
+animals,4,4,a tiger,an animal,as a lego sculpture,a tiger as a lego sculpture,an animal as a lego sculpture
+animals,5,6,a giraffe,an animal,looking surprised,a giraffe looking surprised,an animal looking surprised
+animals,5,10,a giraffe,an animal,drinking water from a lake,a giraffe drinking water from a lake,an animal drinking water from a lake
+animals,5,3,a giraffe,an animal,walking along a riverbank,a giraffe walking along a riverbank,an animal walking along a riverbank
+animals,6,2,a donkey,an animal,hunting for food,a donkey hunting for food,an animal hunting for food
+animals,6,12,a donkey,an animal,wet after a rainstorm,a donkey wet after a rainstorm,an animal wet after a rainstorm
+animals,6,3,a donkey,an animal,walking along a riverbank,a donkey walking along a riverbank,an animal walking along a riverbank
+animals,7,11,a horse,an animal,playing in the mud,a horse playing in the mud,an animal playing in the mud
+animals,7,19,a horse,an animal,in pixel art form,a horse in pixel art form,an animal in pixel art form
+animals,7,8,a horse,an animal,made of plastic,a horse made of plastic,an animal made of plastic
+animals,8,1,a wolf,an animal,looking up curiously,a wolf looking up curiously,an animal looking up curiously
+animals,8,14,a wolf,an animal,made of clay,a wolf made of clay,an animal made of clay
+animals,8,17,a wolf,an animal,under the rain,a wolf under the rain,an animal under the rain
+animals,9,3,a penguin,an animal,walking along a riverbank,a penguin walking along a riverbank,an animal walking along a riverbank
+animals,9,12,a penguin,an animal,wet after a rainstorm,a penguin wet after a rainstorm,an animal wet after a rainstorm
+animals,9,2,a penguin,an animal,hunting for food,a penguin hunting for food,an animal hunting for food
+animals,10,17,a lion,an animal,under the rain,a lion under the rain,an animal under the rain
+animals,10,9,a lion,an animal,in a comic book style,a lion in a comic book style,an animal in a comic book style
+animals,10,11,a lion,an animal,playing in the mud,a lion playing in the mud,an animal playing in the mud
+animals,11,18,a frog,an animal,inside a snow globe,a frog inside a snow globe,an animal inside a snow globe
+animals,11,6,a frog,an animal,looking surprised,a frog looking surprised,an animal looking surprised
+animals,11,2,a frog,an animal,hunting for food,a frog hunting for food,an animal hunting for food
+animals,12,1,a rabbit,an animal,looking up curiously,a rabbit looking up curiously,an animal looking up curiously
+animals,12,7,a rabbit,an animal,crying softly,a rabbit crying softly,an animal crying softly
+animals,12,9,a rabbit,an animal,in a comic book style,a rabbit in a comic book style,an animal in a comic book style
+animals,13,2,a cat,an animal,hunting for food,a cat hunting for food,an animal hunting for food
+animals,13,7,a cat,an animal,crying softly,a cat crying softly,an animal crying softly
+animals,13,3,a cat,an animal,walking along a riverbank,a cat walking along a riverbank,an animal walking along a riverbank
+animals,14,12,a leopard,an animal,wet after a rainstorm,a leopard wet after a rainstorm,an animal wet after a rainstorm
+animals,14,8,a leopard,an animal,made of plastic,a leopard made of plastic,an animal made of plastic
+animals,14,14,a leopard,an animal,made of clay,a leopard made of clay,an animal made of clay
+animals,15,11,a raccoon,an animal,playing in the mud,a raccoon playing in the mud,an animal playing in the mud
+animals,15,5,a raccoon,an animal,as a statue in an ancient temple,a raccoon as a statue in an ancient temple,an animal as a statue in an ancient temple
+animals,15,19,a raccoon,an animal,in pixel art form,a raccoon in pixel art form,an animal in pixel art form
+animals,16,11,a sheep,an animal,playing in the mud,a sheep playing in the mud,an animal playing in the mud
+animals,16,6,a sheep,an animal,looking surprised,a sheep looking surprised,an animal looking surprised
+animals,16,8,a sheep,an animal,made of plastic,a sheep made of plastic,an animal made of plastic
+animals,17,2,a panther,an animal,hunting for food,a panther hunting for food,an animal hunting for food
+animals,17,5,a panther,an animal,as a statue in an ancient temple,a panther as a statue in an ancient temple,an animal as a statue in an ancient temple
+animals,17,17,a panther,an animal,under the rain,a panther under the rain,an animal under the rain
+animals,18,7,a buffalo,an animal,crying softly,a buffalo crying softly,an animal crying softly
+animals,18,5,a buffalo,an animal,as a statue in an ancient temple,a buffalo as a statue in an ancient temple,an animal as a statue in an ancient temple
+animals,18,14,a buffalo,an animal,made of clay,a buffalo made of clay,an animal made of clay
+animals,19,12,a bear,an animal,wet after a rainstorm,a bear wet after a rainstorm,an animal wet after a rainstorm
+animals,19,8,a bear,an animal,made of plastic,a bear made of plastic,an animal made of plastic
+animals,19,17,a bear,an animal,under the rain,a bear under the rain,an animal under the rain
+celebrities,0,14,will smith,a person,standing by a window,will smith standing by a window,a person standing by a window
+celebrities,0,4,will smith,a person,eyes wide with excitement,will smith eyes wide with excitement,a person eyes wide with excitement
+celebrities,0,8,will smith,a person,walking in a park,will smith walking in a park,a person walking in a park
+celebrities,1,4,justin bieber,a person,eyes wide with excitement,justin bieber eyes wide with excitement,a person eyes wide with excitement
+celebrities,1,7,justin bieber,a person,at a train station,justin bieber at a train station,a person at a train station
+celebrities,1,17,justin bieber,a person,at an art gallery,justin bieber at an art gallery,a person at an art gallery
+celebrities,2,17,lionel messi,a person,at an art gallery,lionel messi at an art gallery,a person at an art gallery
+celebrities,2,8,lionel messi,a person,walking in a park,lionel messi walking in a park,a person walking in a park
+celebrities,2,13,lionel messi,a person,looking surprised,lionel messi looking surprised,a person looking surprised
+celebrities,3,18,jennifer lopez,a person,at a coffee shop,jennifer lopez at a coffee shop,a person at a coffee shop
+celebrities,3,12,jennifer lopez,a person,by the ocean during sunset,jennifer lopez by the ocean during sunset,a person by the ocean during sunset
+celebrities,3,11,jennifer lopez,a person,lying on a picnic blanket,jennifer lopez lying on a picnic blanket,a person lying on a picnic blanket
+celebrities,4,7,lebron james,a person,at a train station,lebron james at a train station,a person at a train station
+celebrities,4,4,lebron james,a person,eyes wide with excitement,lebron james eyes wide with excitement,a person eyes wide with excitement
+celebrities,4,16,lebron james,a person,sitting on the steps of a building,lebron james sitting on the steps of a building,a person sitting on the steps of a building
+celebrities,5,15,morgan freeman,a person,wearing a cowboy hat,morgan freeman wearing a cowboy hat,a person wearing a cowboy hat
+celebrities,5,2,morgan freeman,a person,sitting on a couch,morgan freeman sitting on a couch,a person sitting on a couch
+celebrities,5,1,morgan freeman,a person,in a cozy cabin,morgan freeman in a cozy cabin,a person in a cozy cabin
+celebrities,6,3,albert einstein,a person,lying in the grass,albert einstein lying in the grass,a person lying in the grass
+celebrities,6,4,albert einstein,a person,eyes wide with excitement,albert einstein eyes wide with excitement,a person eyes wide with excitement
+celebrities,6,5,albert einstein,a person,in a casual streetwear outfit,albert einstein in a casual streetwear outfit,a person in a casual streetwear outfit
+celebrities,7,13,princess diana,a person,looking surprised,princess diana looking surprised,a person looking surprised
+celebrities,7,2,princess diana,a person,sitting on a couch,princess diana sitting on a couch,a person sitting on a couch
+celebrities,7,12,princess diana,a person,by the ocean during sunset,princess diana by the ocean during sunset,a person by the ocean during sunset
+celebrities,8,12,mahatma gandhi,a person,by the ocean during sunset,mahatma gandhi by the ocean during sunset,a person by the ocean during sunset
+celebrities,8,14,mahatma gandhi,a person,standing by a window,mahatma gandhi standing by a window,a person standing by a window
+celebrities,8,16,mahatma gandhi,a person,sitting on the steps of a building,mahatma gandhi sitting on the steps of a building,a person sitting on the steps of a building
+celebrities,9,8,george washington,a person,walking in a park,george washington walking in a park,a person walking in a park
+celebrities,9,17,george washington,a person,at an art gallery,george washington at an art gallery,a person at an art gallery
+celebrities,9,0,george washington,a person,walking down a narrow alley,george washington walking down a narrow alley,a person walking down a narrow alley
+celebrities,10,3,david beckham,a person,lying in the grass,david beckham lying in the grass,a person lying in the grass
+celebrities,10,17,david beckham,a person,at an art gallery,david beckham at an art gallery,a person at an art gallery
+celebrities,10,8,david beckham,a person,walking in a park,david beckham walking in a park,a person walking in a park
+celebrities,11,10,johnny depp,a person,in an oversized hoodie,johnny depp in an oversized hoodie,a person in an oversized hoodie
+celebrities,11,3,johnny depp,a person,lying in the grass,johnny depp lying in the grass,a person lying in the grass
+celebrities,11,9,johnny depp,a person,at midnight with a full moon,johnny depp at midnight with a full moon,a person at midnight with a full moon
+celebrities,12,13,abraham lincoln,a person,looking surprised,abraham lincoln looking surprised,a person looking surprised
+celebrities,12,5,abraham lincoln,a person,in a casual streetwear outfit,abraham lincoln in a casual streetwear outfit,a person in a casual streetwear outfit
+celebrities,12,14,abraham lincoln,a person,standing by a window,abraham lincoln standing by a window,a person standing by a window
+celebrities,13,0,beyonce,a person,walking down a narrow alley,beyonce walking down a narrow alley,a person walking down a narrow alley
+celebrities,13,8,beyonce,a person,walking in a park,beyonce walking in a park,a person walking in a park
+celebrities,13,16,beyonce,a person,sitting on the steps of a building,beyonce sitting on the steps of a building,a person sitting on the steps of a building
+celebrities,14,5,michael jackson,a person,in a casual streetwear outfit,michael jackson in a casual streetwear outfit,a person in a casual streetwear outfit
+celebrities,14,16,michael jackson,a person,sitting on the steps of a building,michael jackson sitting on the steps of a building,a person sitting on the steps of a building
+celebrities,14,3,michael jackson,a person,lying in the grass,michael jackson lying in the grass,a person lying in the grass
+celebrities,15,9,barack obama,a person,at midnight with a full moon,barack obama at midnight with a full moon,a person at midnight with a full moon
+celebrities,15,16,barack obama,a person,sitting on the steps of a building,barack obama sitting on the steps of a building,a person sitting on the steps of a building
+celebrities,15,6,barack obama,a person,in a modern apartment,barack obama in a modern apartment,a person in a modern apartment
+celebrities,16,4,bill gates,a person,eyes wide with excitement,bill gates eyes wide with excitement,a person eyes wide with excitement
+celebrities,16,11,bill gates,a person,lying on a picnic blanket,bill gates lying on a picnic blanket,a person lying on a picnic blanket
+celebrities,16,5,bill gates,a person,in a casual streetwear outfit,bill gates in a casual streetwear outfit,a person in a casual streetwear outfit
+celebrities,17,17,ed sheeran,a person,at an art gallery,ed sheeran at an art gallery,a person at an art gallery
+celebrities,17,16,ed sheeran,a person,sitting on the steps of a building,ed sheeran sitting on the steps of a building,a person sitting on the steps of a building
+celebrities,17,0,ed sheeran,a person,walking down a narrow alley,ed sheeran walking down a narrow alley,a person walking down a narrow alley
+celebrities,18,19,george clooney,a person,wearing a leather jacket,george clooney wearing a leather jacket,a person wearing a leather jacket
+celebrities,18,10,george clooney,a person,in an oversized hoodie,george clooney in an oversized hoodie,a person in an oversized hoodie
+celebrities,18,15,george clooney,a person,wearing a cowboy hat,george clooney wearing a cowboy hat,a person wearing a cowboy hat
+celebrities,19,0,steve jobs,a person,walking down a narrow alley,steve jobs walking down a narrow alley,a person walking down a narrow alley
+celebrities,19,3,steve jobs,a person,lying in the grass,steve jobs lying in the grass,a person lying in the grass
+celebrities,19,11,steve jobs,a person,lying on a picnic blanket,steve jobs lying on a picnic blanket,a person lying on a picnic blanket
+copyrights,0,19,the patrick star,a character,with armor of gold,the patrick star with armor of gold,a character with armor of gold
+copyrights,0,13,the patrick star,a character,yawning sleepily,the patrick star yawning sleepily,a character yawning sleepily
+copyrights,0,6,the patrick star,a character,as a hologram,the patrick star as a hologram,a character as a hologram
+copyrights,1,17,the c-3po,a character,basking in the sun,the c-3po basking in the sun,a character basking in the sun
+copyrights,1,6,the c-3po,a character,as a hologram,the c-3po as a hologram,a character as a hologram
+copyrights,1,9,the c-3po,a character,made of wood,the c-3po made of wood,a character made of wood
+copyrights,2,12,mike wazowski,a character,on a hot summer day,mike wazowski on a hot summer day,a character on a hot summer day
+copyrights,2,11,mike wazowski,a character,sitting by a waterfall,mike wazowski sitting by a waterfall,a character sitting by a waterfall
+copyrights,2,14,mike wazowski,a character,running across a grassy field,mike wazowski running across a grassy field,a character running across a grassy field
+copyrights,3,16,the captain america,a character,smiling softly,the captain america smiling softly,a character smiling softly
+copyrights,3,14,the captain america,a character,running across a grassy field,the captain america running across a grassy field,a character running across a grassy field
+copyrights,3,3,the captain america,a character,looking up curiously,the captain america looking up curiously,a character looking up curiously
+copyrights,4,7,the wolverine,a character,made of clay,the wolverine made of clay,a character made of clay
+copyrights,4,19,the wolverine,a character,with armor of gold,the wolverine with armor of gold,a character with armor of gold
+copyrights,4,2,the wolverine,a character,watching something from a distance,the wolverine watching something from a distance,a character watching something from a distance
+copyrights,5,10,the spiderman,a character,as a paper cutout,the spiderman as a paper cutout,a character as a paper cutout
+copyrights,5,0,the spiderman,a character,made of plastic,the spiderman made of plastic,a character made of plastic
+copyrights,5,17,the spiderman,a character,basking in the sun,the spiderman basking in the sun,a character basking in the sun
+copyrights,6,7,the spongebob,a character,made of clay,the spongebob made of clay,a character made of clay
+copyrights,6,18,the spongebob,a character,walking through autumn leaves,the spongebob walking through autumn leaves,a character walking through autumn leaves
+copyrights,6,19,the spongebob,a character,with armor of gold,the spongebob with armor of gold,a character with armor of gold
+copyrights,7,0,popeye the sailor,a character,made of plastic,popeye the sailor made of plastic,a character made of plastic
+copyrights,7,2,popeye the sailor,a character,watching something from a distance,popeye the sailor watching something from a distance,a character watching something from a distance
+copyrights,7,1,popeye the sailor,a character,in origami style,popeye the sailor in origami style,a character in origami style
+copyrights,8,7,the mickey mouse,a character,made of clay,the mickey mouse made of clay,a character made of clay
+copyrights,8,2,the mickey mouse,a character,watching something from a distance,the mickey mouse watching something from a distance,a character watching something from a distance
+copyrights,8,1,the mickey mouse,a character,in origami style,the mickey mouse in origami style,a character in origami style
+copyrights,9,10,the ben 10,a character,as a paper cutout,the ben 10 as a paper cutout,a character as a paper cutout
+copyrights,9,2,the ben 10,a character,watching something from a distance,the ben 10 watching something from a distance,a character watching something from a distance
+copyrights,9,16,the ben 10,a character,smiling softly,the ben 10 smiling softly,a character smiling softly
+copyrights,10,7,the venom,a character,made of clay,the venom made of clay,a character made of clay
+copyrights,10,8,the venom,a character,as a charcoal drawing,the venom as a charcoal drawing,a character as a charcoal drawing
+copyrights,10,15,the venom,a character,walking through a desert,the venom walking through a desert,a character walking through a desert
+copyrights,11,6,the r2-d2,a character,as a hologram,the r2-d2 as a hologram,a character as a hologram
+copyrights,11,17,the r2-d2,a character,basking in the sun,the r2-d2 basking in the sun,a character basking in the sun
+copyrights,11,4,the r2-d2,a character,made of metal,the r2-d2 made of metal,a character made of metal
+copyrights,12,18,the king kong,a character,walking through autumn leaves,the king kong walking through autumn leaves,a character walking through autumn leaves
+copyrights,12,19,the king kong,a character,with armor of gold,the king kong with armor of gold,a character with armor of gold
+copyrights,12,15,the king kong,a character,walking through a desert,the king kong walking through a desert,a character walking through a desert
+copyrights,13,7,the hulk,a character,made of clay,the hulk made of clay,a character made of clay
+copyrights,13,15,the hulk,a character,walking through a desert,the hulk walking through a desert,a character walking through a desert
+copyrights,13,13,the hulk,a character,yawning sleepily,the hulk yawning sleepily,a character yawning sleepily
+copyrights,14,6,the iron giant,a character,as a hologram,the iron giant as a hologram,a character as a hologram
+copyrights,14,3,the iron giant,a character,looking up curiously,the iron giant looking up curiously,a character looking up curiously
+copyrights,14,18,the iron giant,a character,walking through autumn leaves,the iron giant walking through autumn leaves,a character walking through autumn leaves
+copyrights,15,13,the scooby-doo,a character,yawning sleepily,the scooby-doo yawning sleepily,a character yawning sleepily
+copyrights,15,11,the scooby-doo,a character,sitting by a waterfall,the scooby-doo sitting by a waterfall,a character sitting by a waterfall
+copyrights,15,19,the scooby-doo,a character,with armor of gold,the scooby-doo with armor of gold,a character with armor of gold
+copyrights,16,13,the superman,a character,yawning sleepily,the superman yawning sleepily,a character yawning sleepily
+copyrights,16,14,the superman,a character,running across a grassy field,the superman running across a grassy field,a character running across a grassy field
+copyrights,16,1,the superman,a character,in origami style,the superman in origami style,a character in origami style
+copyrights,17,3,peter pan,a character,looking up curiously,peter pan looking up curiously,a character looking up curiously
+copyrights,17,1,peter pan,a character,in origami style,peter pan in origami style,a character in origami style
+copyrights,17,12,peter pan,a character,on a hot summer day,peter pan on a hot summer day,a character on a hot summer day
+copyrights,18,10,winnie-the-pooh,a character,as a paper cutout,winnie-the-pooh as a paper cutout,a character as a paper cutout
+copyrights,18,3,winnie-the-pooh,a character,looking up curiously,winnie-the-pooh looking up curiously,a character looking up curiously
+copyrights,18,7,winnie-the-pooh,a character,made of clay,winnie-the-pooh made of clay,a character made of clay
+copyrights,19,6,the thor,a character,as a hologram,the thor as a hologram,a character as a hologram
+copyrights,19,19,the thor,a character,with armor of gold,the thor with armor of gold,a character with armor of gold
+copyrights,19,17,the thor,a character,basking in the sun,the thor basking in the sun,a character basking in the sun
+places,0,6,big ben of london,a place,at dawn,big ben of london at dawn,a place at dawn
+places,0,0,big ben of london,a place,surrounded by cherry blossoms,big ben of london surrounded by cherry blossoms,a place surrounded by cherry blossoms
+places,0,2,big ben of london,a place,with a rainbow,big ben of london with a rainbow,a place with a rainbow
+places,1,6,the statue of liberty,a place,at dawn,the statue of liberty at dawn,a place at dawn
+places,1,0,the statue of liberty,a place,surrounded by cherry blossoms,the statue of liberty surrounded by cherry blossoms,a place surrounded by cherry blossoms
+places,1,9,the statue of liberty,a place,inside a snow globe,the statue of liberty inside a snow globe,a place inside a snow globe
+places,2,4,the sydney opera house,a place,with a sunset,the sydney opera house with a sunset,a place with a sunset
+places,2,7,the sydney opera house,a place,as a miniature model,the sydney opera house as a miniature model,a place as a miniature model
+places,2,9,the sydney opera house,a place,inside a snow globe,the sydney opera house inside a snow globe,a place inside a snow globe
+places,3,6,the great wall of china,a place,at dawn,the great wall of china at dawn,a place at dawn
+places,3,8,the great wall of china,a place,under a full moon,the great wall of china under a full moon,a place under a full moon
+places,3,7,the great wall of china,a place,as a miniature model,the great wall of china as a miniature model,a place as a miniature model
+places,4,2,the burj khalifa,a place,with a rainbow,the burj khalifa with a rainbow,a place with a rainbow
+places,4,3,the burj khalifa,a place,covered in fog,the burj khalifa covered in fog,a place covered in fog
+places,4,4,the burj khalifa,a place,with a sunset,the burj khalifa with a sunset,a place with a sunset
+places,5,3,the leaning tower of pisa,a place,covered in fog,the leaning tower of pisa covered in fog,a place covered in fog
+places,5,0,the leaning tower of pisa,a place,surrounded by cherry blossoms,the leaning tower of pisa surrounded by cherry blossoms,a place surrounded by cherry blossoms
+places,5,8,the leaning tower of pisa,a place,under a full moon,the leaning tower of pisa under a full moon,a place under a full moon
+places,6,5,the taj mahal,a place,in black and white,the taj mahal in black and white,a place in black and white
+places,6,0,the taj mahal,a place,surrounded by cherry blossoms,the taj mahal surrounded by cherry blossoms,a place surrounded by cherry blossoms
+places,6,8,the taj mahal,a place,under a full moon,the taj mahal under a full moon,a place under a full moon
+places,7,9,the pyramids of giza,a place,inside a snow globe,the pyramids of giza inside a snow globe,a place inside a snow globe
+places,7,7,the pyramids of giza,a place,as a miniature model,the pyramids of giza as a miniature model,a place as a miniature model
+places,7,2,the pyramids of giza,a place,with a rainbow,the pyramids of giza with a rainbow,a place with a rainbow
+places,8,0,chichen itza of mexico,a place,surrounded by cherry blossoms,chichen itza of mexico surrounded by cherry blossoms,a place surrounded by cherry blossoms
+places,8,8,chichen itza of mexico,a place,under a full moon,chichen itza of mexico under a full moon,a place under a full moon
+places,8,1,chichen itza of mexico,a place,with falling stars,chichen itza of mexico with falling stars,a place with falling stars
+places,9,2,moai statues of easter island,a place,with a rainbow,moai statues of easter island with a rainbow,a place with a rainbow
+places,9,1,moai statues of easter island,a place,with falling stars,moai statues of easter island with falling stars,a place with falling stars
+places,9,8,moai statues of easter island,a place,under a full moon,moai statues of easter island under a full moon,a place under a full moon
+places,10,3,stonehenge of england,a place,covered in fog,stonehenge of england covered in fog,a place covered in fog
+places,10,6,stonehenge of england,a place,at dawn,stonehenge of england at dawn,a place at dawn
+places,10,1,stonehenge of england,a place,with falling stars,stonehenge of england with falling stars,a place with falling stars
+places,11,9,the eiffel tower,a place,inside a snow globe,the eiffel tower inside a snow globe,a place inside a snow globe
+places,11,3,the eiffel tower,a place,covered in fog,the eiffel tower covered in fog,a place covered in fog
+places,11,0,the eiffel tower,a place,surrounded by cherry blossoms,the eiffel tower surrounded by cherry blossoms,a place surrounded by cherry blossoms
+places,12,9,the acropolis of athens,a place,inside a snow globe,the acropolis of athens inside a snow globe,a place inside a snow globe
+places,12,1,the acropolis of athens,a place,with falling stars,the acropolis of athens with falling stars,a place with falling stars
+places,12,6,the acropolis of athens,a place,at dawn,the acropolis of athens at dawn,a place at dawn
+places,13,9,the golden gate bridge,a place,inside a snow globe,the golden gate bridge inside a snow globe,a place inside a snow globe
+places,13,8,the golden gate bridge,a place,under a full moon,the golden gate bridge under a full moon,a place under a full moon
+places,13,5,the golden gate bridge,a place,in black and white,the golden gate bridge in black and white,a place in black and white
+places,14,4,the louvre museum,a place,with a sunset,the louvre museum with a sunset,a place with a sunset
+places,14,3,the louvre museum,a place,covered in fog,the louvre museum covered in fog,a place covered in fog
+places,14,5,the louvre museum,a place,in black and white,the louvre museum in black and white,a place in black and white
+places,15,3,the white house of washington dc,a place,covered in fog,the white house of washington dc covered in fog,a place covered in fog
+places,15,4,the white house of washington dc,a place,with a sunset,the white house of washington dc with a sunset,a place with a sunset
+places,15,6,the white house of washington dc,a place,at dawn,the white house of washington dc at dawn,a place at dawn
+places,16,2,burj al arab of dubai,a place,with a rainbow,burj al arab of dubai with a rainbow,a place with a rainbow
+places,16,4,burj al arab of dubai,a place,with a sunset,burj al arab of dubai with a sunset,a place with a sunset
+places,16,7,burj al arab of dubai,a place,as a miniature model,burj al arab of dubai as a miniature model,a place as a miniature model
+places,17,5,the empire state building of new york city,a place,in black and white,the empire state building of new york city in black and white,a place in black and white
+places,17,1,the empire state building of new york city,a place,with falling stars,the empire state building of new york city with falling stars,a place with falling stars
+places,17,0,the empire state building of new york city,a place,surrounded by cherry blossoms,the empire state building of new york city surrounded by cherry blossoms,a place surrounded by cherry blossoms
+places,18,7,the colosseum,a place,as a miniature model,the colosseum as a miniature model,a place as a miniature model
+places,18,1,the colosseum,a place,with falling stars,the colosseum with falling stars,a place with falling stars
+places,18,8,the colosseum,a place,under a full moon,the colosseum under a full moon,a place under a full moon
+places,19,8,christ the redeemer,a place,under a full moon,christ the redeemer under a full moon,a place under a full moon
+places,19,3,christ the redeemer,a place,covered in fog,christ the redeemer covered in fog,a place covered in fog
+places,19,4,christ the redeemer,a place,with a sunset,christ the redeemer with a sunset,a place with a sunset

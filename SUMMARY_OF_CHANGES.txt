@@ -1,0 +1,143 @@
+================================================================================
+SUMMARY OF CHANGES - SAMPLE DATASET GENERATION AND PARALLEL PROCESSING
+================================================================================
+
+FILES CREATED:
+--------------
+1. /home/mtoker/git/simple_skips/prepare_prompts.py
+   - Generates full dataset from DiT-Knowledge-Localization dataset
+   - Creates 61,900 prompts (animals, celebrities, copyrights, places, safety, style)
+   - Output: prepared_prompts.csv
+
+2. /home/mtoker/git/simple_skips/create_sample_dataset.py
+   - Creates a sample dataset with placeholders for testing
+   - Selects 5 items per subset (animals, celebrities, copyrights, places)
+   - Creates 3 variants per item: specific, placeholder, extension_only
+   - Output: sample_prompts_with_placeholders.csv (60 rows)
+
+3. /home/mtoker/git/simple_skips/run_main.sh
+   - Wrapper script for batch job submission
+   - Sets CUDA_VISIBLE_DEVICES=0
+   - Calls Python with full path to avoid conda issues
+
+4. /home/mtoker/git/simple_skips/prepare_for_scale_run.txt
+   - Complete guide for running at scale
+   - Includes setup, monitoring, troubleshooting, and parallel processing
+
+
+FILES MODIFIED:
+---------------
+1. /home/mtoker/git/simple_skips/sandbox_diffusers/main.py
+   - Added CSV loading instead of hardcoded prompts list
+   - Added start_idx and end_idx for parallel processing
+   - Changed filename structure: subset_variant_original_promptExtension_seed
+   - Changed output directory structure: outputs_MODEL/sample_prompts/subset/
+   - Updated wandb logging to include subset, variant, seed
+
+
+SAMPLE DATASET STRUCTURE:
+--------------------------
+CSV Columns:
+- subset: animals, celebrities, copyrights, places
+- variant: specific, placeholder, extension_only
+- item_index: Index of selected item (0-4)
+- extension_index: Index of selected extension
+- original_item: The base item (e.g., "a cow", "abraham lincoln")
+- placeholder: Generic placeholder (e.g., "an animal", "a person")
+- prompt_extension: The extension phrase
+- prompt: Final prompt text to use for generation
+
+Placeholders:
+- animals → "an animal"
+- celebrities → "a person"
+- copyrights → "a character"
+- places → "a place"
+
+
+FILENAME FORMAT:
+----------------
+Old format:
+  outputs_MODEL/PROMPT_(N: NEG)_STEPS_HEIGHT/SEED_original_PROMPT.jpg
+
+New format:
+  outputs_MODEL/sample_prompts/SUBSET/SUBSET_VARIANT_ITEM_EXTENSION_SEED.jpg
+
+Example:
+  outputs_black-forest-labs/FLUX.1-dev/sample_prompts/animals/animals_specific_a_cow_crying_softly_40.jpg
+
+
+PARALLEL PROCESSING:
+--------------------
+To run multiple jobs in parallel, modify these variables in main.py:
+
+Job 1 - Process prompts 0-19:
+  start_idx = 0
+  end_idx = 20
+
+Job 2 - Process prompts 20-39:
+  start_idx = 20
+  end_idx = 40
+
+Job 3 - Process prompts 40-59:
+  start_idx = 40
+  end_idx = None
+
+The skip mechanism ensures no duplicate generation even with overlapping ranges.
+
+
+EXAMPLE USAGE:
+--------------
+1. Generate sample dataset:
+   python /home/mtoker/git/simple_skips/create_sample_dataset.py
+
+2. Modify main.py for your job:
+   start_idx = 0
+   end_idx = 20
+
+3. Submit job:
+   submit_job --partition polar4 --nodes 1 --gpu 1 --duration 4.0 \
+   --name flux_sample -c "/home/mtoker/git/simple_skips/run_main.sh"
+
+
+KEY BENEFITS:
+-------------
+✓ Organized dataset with placeholders for controlled experiments
+✓ Hierarchical file naming for easy organization
+✓ CSV-based prompt loading for flexibility
+✓ Parallel processing support for faster completion
+✓ File existence checking to skip already-generated images
+✓ Wandb integration with structured metadata
+
+
+SAMPLE PROMPTS EXAMPLES:
+-------------------------
+Animals:
+- specific: "a cow crying softly"
+- placeholder: "an animal crying softly"
+- extension_only: "crying softly"
+
+Celebrities:
+- specific: "abraham lincoln sitting on a couch"
+- placeholder: "a person sitting on a couch"
+- extension_only: "sitting on a couch"
+
+Copyrights:
+- specific: "the batman basking in the sun"
+- placeholder: "a character basking in the sun"
+- extension_only: "basking in the sun"
+
+Places:
+- specific: "the eiffel tower with a rainbow"
+- placeholder: "a place with a rainbow"
+- extension_only: "with a rainbow"
+
+
+NEXT STEPS:
+-----------
+1. Test with small range: start_idx=0, end_idx=5, seeds=list(range(40,42))
+2. Verify outputs are created correctly
+3. Scale up to full dataset with parallel jobs
+4. Monitor progress using commands in prepare_for_scale_run.txt
+
+
+================================================================================

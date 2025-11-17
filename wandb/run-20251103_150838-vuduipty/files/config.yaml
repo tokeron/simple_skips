@@ -1,0 +1,171 @@
+_wandb:
+    value:
+        cli_version: 0.21.1
+        e:
+            15g86sw9gvak0r1x9qhpjxojcfdgl7mm:
+                args:
+                    - --start_idx
+                    - "84"
+                    - --end_idx
+                    - "125"
+                cpu_count: 128
+                cpu_count_logical: 255
+                cudaVersion: "12.5"
+                disk:
+                    /:
+                        total: "20321311363072"
+                        used: "843438563328"
+                email: mtoker@nvidia.com
+                executable: /lustre/fsw/portfolios/nvr/users/mtoker/miniconda3/envs/diffusion_env/bin/python
+                gpu: NVIDIA A100-SXM4-80GB
+                gpu_count: 8
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-c2da172d-ce4d-4163-1dc4-c314a27ce03d
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-c38fad4a-65fa-8e64-e20c-eaea78757701
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-d216c9f9-d6d7-617f-c563-e7ef0d41a60f
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-89e9f4ca-3d27-9e2d-937f-903c2a2a90a5
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-cdb08fa8-5d9c-8702-e639-777e499fde4b
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-ca79cd9c-562a-9b06-5650-822e5753f045
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-33b83c49-13ae-2b18-49fd-238b4b3885a8
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-2936875c-636d-7885-f9fe-120917c0a7a7
+                host: batch-block1-0048
+                memory:
+                    total: "2164258562048"
+                os: Linux-5.15.0-1032-oracle-x86_64-with-glibc2.35
+                program: /home/mtoker/git/simple_skips/sandbox_diffusers/main.py
+                python: CPython 3.12.11
+                root: /lustre/fs12/portfolios/nvr/projects/nvr_israel_persdiff/users/mtoker/git/simple_skips
+                slurm:
+                    cluster_name: cs-oci-ord
+                    conf: /cm/shared/apps/slurm/var/etc/cs-oci-ord/slurm.conf
+                    cpu_bind: quiet,mask_cpu:0x00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                    cpu_bind_list: 0x00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+                    cpu_bind_type: 'mask_cpu:'
+                    cpu_bind_verbose: quiet
+                    cpu_freq_req: Performance
+                    cpus_on_node: "248"
+                    cpus_per_task: "240"
+                    distribution: cyclic
+                    do_autoreboot: "0"
+                    gpus_on_node: "8"
+                    gtids: "0"
+                    job_account: nvr_israel_persdiff
+                    job_cpus_per_node: "248"
+                    job_end_time: "1762187285"
+                    job_gid: "30"
+                    job_gpus: 0,1,2,3,4,5,6,7
+                    job_name: flux_full_dataset_20251103-042657
+                    job_nodelist: batch-block1-0048
+                    job_num_nodes: "1"
+                    job_partition: interactive
+                    job_qos: normal
+                    job_start_time: "1762172885"
+                    job_uid: "149570"
+                    job_user: mtoker
+                    launch_node_ipaddr: 10.49.167.165
+                    mem_per_node: "1843200"
+                    mpi_type: pmix
+                    nnodes: "1"
+                    nodeid: "0"
+                    nodelist: batch-block1-0048
+                    nprocs: "1"
+                    ntasks_per_node: "1"
+                    open_mode: a
+                    pmix_mapping_serv: (vector,(0,1,1))
+                    pmixp_abort_agent_port: "15085"
+                    prio_process: "0"
+                    srun_comm_host: 10.49.167.165
+                    srun_comm_port: "12373"
+                    step_gpus: 0,1,2,3,4,5,6,7
+                    step_id: "0"
+                    step_launcher_port: "12373"
+                    step_nodelist: batch-block1-0048
+                    step_num_nodes: "1"
+                    step_num_tasks: "1"
+                    step_tasks_per_node: "1"
+                    stepid: "0"
+                    submit_dir: /lustre/fs12/portfolios/nvr/projects/nvr_israel_persdiff/users/mtoker/git/simple_skips
+                    submit_host: batch-block1-10013
+                    task_pid: "2385183"
+                    tasks_per_node: "1"
+                    topology_addr: top.nw_00b0043b83efa33ec5eb7ee4e638070a0ef222ed72a8eab9127a0de4eaca6360.rk_0af968233e3808fe7e362585ec5f70e1fad5591db4a8b3f725ce58ff11ea7758.batch-block1-0048
+                    topology_addr_pattern: switch.switch.switch.node
+                    umask: "0022"
+                    working_cluster: cs-oci-ord:cs-oci-ord-a:6817:9984:109
+                startedAt: "2025-11-03T15:08:38.204596Z"
+                writerId: 15g86sw9gvak0r1x9qhpjxojcfdgl7mm
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+                - 105
+            "2":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+                - 105
+            "3":
+                - 2
+                - 16
+            "4": 3.12.11
+            "5": 0.21.1
+            "6": 4.55.0
+            "12": 0.21.1
+            "13": linux-x86_64
+device:
+    value: cuda
+height:
+    value: 1024
+model:
+    value: black-forest-labs/FLUX.1-dev
+negative_prompt:
+    value: ""
+num_inference_steps:
+    value: 26
+prompt:
+    value: a person in an oversized hoodie
+seed:
+    value: 54
+width:
+    value: 1024

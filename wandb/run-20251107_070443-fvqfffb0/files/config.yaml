@@ -1,0 +1,161 @@
+_wandb:
+    value:
+        cli_version: 0.21.1
+        e:
+            48xl1pcmvh1u02roa8ed7vordyiood48:
+                args:
+                    - --model_name
+                    - black-forest-labs/FLUX.1-dev
+                    - --prompts_csv
+                    - /home/mtoker/git/simple_skips/sample_prompts_analysis_top10.csv
+                    - --seeds
+                    - 42,52,62
+                    - --do_indirect_effect
+                    - --do_direct_effect_removing_partial
+                    - --do_direct_effect_using_only_partial
+                    - --start_idx
+                    - "2"
+                    - --end_idx
+                    - "4"
+                cpu_count: 128
+                cpu_count_logical: 255
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "6746538991616"
+                        used: "50555068416"
+                email: mtoker@nvidia.com
+                executable: /lustre/fsw/portfolios/nvr/users/mtoker/miniconda3/envs/diffusion_env/bin/python
+                gpu: NVIDIA A100-SXM4-80GB
+                gpu_count: 8
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-acd10c25-e5a1-f589-39b6-540934411859
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-5b36c9fc-57d7-a480-74d3-13ebed8471ac
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-35d204be-b220-576f-89a5-f86d4614ca53
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-15dccc8d-10e8-20e3-bebd-69b099ac4014
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-70e7b240-615d-36f4-4295-24e7b7393af8
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-508bc903-a5a3-7ca2-d814-da9f8fc6fd2b
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-03ae8103-6877-49c7-7e4f-401bbc7e0916
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-94d24173-488a-d3bc-a810-81b2eb6098de
+                host: batch-block1-2070
+                memory:
+                    total: "2164258553856"
+                os: Linux-5.15.0-1032-oracle-x86_64-with-glibc2.31
+                program: /home/mtoker/git/simple_skips/sandbox_diffusers/analysis.py
+                python: CPython 3.12.11
+                root: /lustre/fs12/portfolios/nvr/projects/nvr_israel_persdiff/users/mtoker/git/simple_skips
+                slurm:
+                    cluster_name: cs-oci-ord
+                    conf: /cm/shared/apps/slurm/var/etc/cs-oci-ord/slurm.conf
+                    cpus_on_node: "32"
+                    cpus_per_task: "32"
+                    gpus_on_node: "8"
+                    gtids: "0"
+                    job_account: nvr_israel_persdiff
+                    job_cpus_per_node: "32"
+                    job_end_time: "1762542220"
+                    job_gid: "30"
+                    job_gpus: 0,1,2,3,4,5,6,7
+                    job_name: flux_analysis_top10_interactive
+                    job_nodelist: batch-block1-2070
+                    job_num_nodes: "1"
+                    job_partition: interactive
+                    job_qos: normal
+                    job_start_time: "1762527820"
+                    job_uid: "149570"
+                    job_user: mtoker
+                    nnodes: "1"
+                    node_aliases: (null)
+                    nodeid: "0"
+                    nodelist: batch-block1-2070
+                    nprocs: "1"
+                    prio_process: "0"
+                    submit_dir: /lustre/fs12/portfolios/nvr/projects/nvr_israel_persdiff/users/mtoker/git/simple_skips
+                    submit_host: batch-block1-0008
+                    task_pid: "48928"
+                    tasks_per_node: "1"
+                    topology_addr: top.nw_a283cf568a6a27bb40a29e9e1dd3e5fb886858b044a2b4cfa3f77e17d0688250.rk_c1d287f5946924376ecb02aac301ebafa9fe2b49c2021f496140f1188bf1f44c.batch-block1-2070
+                    topology_addr_pattern: switch.switch.switch.node
+                    working_cluster: cs-oci-ord:cs-oci-ord-a:6817:9984:109
+                startedAt: "2025-11-07T15:04:43.410107Z"
+                writerId: 48xl1pcmvh1u02roa8ed7vordyiood48
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+                - 105
+            "2":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+                - 105
+            "3":
+                - 2
+                - 16
+                - 24
+            "4": 3.12.11
+            "5": 0.21.1
+            "6": 4.55.0
+            "12": 0.21.1
+            "13": linux-x86_64
+device:
+    value: cuda
+height:
+    value: 1024
+model:
+    value: black-forest-labs/FLUX.1-dev
+negative_prompt:
+    value: ""
+num_inference_steps:
+    value: 26
+prompt:
+    value: a tiger drinking water from a lake
+seed:
+    value: 42
+subset:
+    value: animals
+variant:
+    value: specific
+width:
+    value: 1024

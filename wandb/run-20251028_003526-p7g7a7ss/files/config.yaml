@@ -1,0 +1,107 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        e:
+            9r4yixbadf4csjc9ye04x9kh6ysoi9ej:
+                cpu_count: 128
+                cpu_count_logical: 255
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "6746538991616"
+                        used: "80452206592"
+                email: mtoker@nvidia.com
+                executable: /lustre/fsw/portfolios/nvr/users/mtoker/miniconda3/envs/grad_env/bin/python
+                gpu: NVIDIA A100-SXM4-80GB
+                gpu_count: 8
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-e7399171-ebab-a2c5-13d7-abfb3923a318
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-8b082b6b-340b-fb14-3294-a2db77607c50
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-821f2487-717c-df73-3842-3a2390212d96
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-a6b99c88-5713-f31c-2a0b-70f12e72cc79
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-2af8666b-226d-5fc5-570c-6c6776d800d4
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-f0924f41-7ccb-956f-4d02-70178e281286
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-bd76c3cb-374a-09ee-f828-0d59fa79e8fa
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-e27e2333-e2af-6cef-dc78-10532e64fbfb
+                host: batch-block1-2098
+                memory:
+                    total: "2164258557952"
+                os: Linux-5.15.0-1032-oracle-x86_64-with-glibc2.31
+                program: /home/mtoker/git/simple_skips/sandbox_diffusers/main.py
+                python: CPython 3.12.11
+                root: /lustre/fs12/portfolios/nvr/projects/nvr_israel_persdiff/users/mtoker/git/simple_skips
+                slurm:
+                    conf: /cm/shared/apps/slurm/var/etc/cs-oci-ord/slurm.conf
+                startedAt: "2025-10-28T07:35:26.368979Z"
+                writerId: 9r4yixbadf4csjc9ye04x9kh6ysoi9ej
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+            "2":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+            "3":
+                - 2
+                - 16
+            "4": 3.12.11
+            "5": 0.22.2
+            "6": 4.56.0
+            "12": 0.22.2
+            "13": linux-x86_64
+device:
+    value: cuda:0
+height:
+    value: 768
+model:
+    value: black-forest-labs/FLUX.1-dev
+num_inference_steps:
+    value: 10
+prompt:
+    value: A photo of an obelisk at the sunset
+seed:
+    value: 43
+width:
+    value: 768

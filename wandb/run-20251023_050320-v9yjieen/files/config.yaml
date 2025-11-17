@@ -1,0 +1,107 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        e:
+            jb33xtejix1lpz19r8616uzamao9ckp2:
+                cpu_count: 128
+                cpu_count_logical: 255
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "6746538991616"
+                        used: "44235710464"
+                email: mtoker@nvidia.com
+                executable: /lustre/fsw/portfolios/nvr/users/mtoker/miniconda3/envs/grad_env/bin/python
+                gpu: NVIDIA A100-SXM4-80GB
+                gpu_count: 8
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-b5d17e8d-396c-89d4-0292-0d523fe29510
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-c34b6814-23bc-1f24-195f-07f28f208316
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-c96a7676-1f71-37f1-4b37-7e7d0a0aa3f3
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-fe828d4c-081e-bc20-af2b-ae0f9b001161
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-9b05821f-4fae-37c8-9fac-1675fc79f96f
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-77f80679-23a0-556d-43ec-283266249332
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-a2dfd852-7ffd-a092-efc3-c147b4fdbdaa
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-a6edc193-741e-169e-9573-46e06f028cea
+                host: batch-block1-2104
+                memory:
+                    total: "2164258553856"
+                os: Linux-5.15.0-1032-oracle-x86_64-with-glibc2.31
+                program: /home/mtoker/git/simple_skips/sandbox_diffusers/main.py
+                python: CPython 3.12.11
+                root: /lustre/fs12/portfolios/nvr/projects/nvr_israel_persdiff/users/mtoker/git/simple_skips
+                slurm:
+                    conf: /cm/shared/apps/slurm/var/etc/cs-oci-ord/slurm.conf
+                startedAt: "2025-10-23T12:03:20.770808Z"
+                writerId: jb33xtejix1lpz19r8616uzamao9ckp2
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+            "2":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+            "3":
+                - 2
+                - 16
+            "4": 3.12.11
+            "5": 0.22.2
+            "6": 4.56.0
+            "12": 0.22.2
+            "13": linux-x86_64
+device:
+    value: cuda:5
+height:
+    value: 768
+model:
+    value: black-forest-labs/FLUX.1-schnell
+num_inference_steps:
+    value: 1
+prompt:
+    value: A photo of spongebob jumping from the top of the Eiffel Tower
+seed:
+    value: 42
+width:
+    value: 768

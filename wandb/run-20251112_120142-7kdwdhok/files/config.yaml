@@ -1,0 +1,113 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        e:
+            8tqx94zf3gewdixik914dek1s9sy4cs3:
+                cpu_count: 128
+                cpu_count_logical: 255
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "6746538991616"
+                        used: "20776714240"
+                email: mtoker@nvidia.com
+                executable: /lustre/fsw/portfolios/nvr/users/mtoker/miniconda3/envs/grad_env/bin/python
+                gpu: NVIDIA A100-SXM4-80GB
+                gpu_count: 8
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-ad5898de-ebd5-9c0e-3451-2249b66fbc5d
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-154e61ab-b1db-c402-465c-7c038d03094c
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-0e58ce5a-6dbb-71f7-b8f2-b506e592efb2
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-04fad041-c4ef-feb4-e437-e8a3f76d9f85
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-fb1496f1-121b-f1a0-d121-d8dbf1d9d934
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-effe0301-0285-df52-59e3-06ea4a376c5e
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-8469633e-d5e6-15b7-73e8-d1fec4935e39
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-9be1480b-8eb3-fb09-418a-86e007145778
+                host: batch-block5-00076
+                memory:
+                    total: "2164258557952"
+                os: Linux-5.15.0-1032-oracle-x86_64-with-glibc2.31
+                program: /home/mtoker/git/simple_skips/sandbox_diffusers/analysis.py
+                python: CPython 3.12.11
+                root: /lustre/fs12/portfolios/nvr/projects/nvr_israel_persdiff/users/mtoker/git/simple_skips
+                slurm:
+                    conf: /cm/shared/apps/slurm/var/etc/cs-oci-ord/slurm.conf
+                startedAt: "2025-11-12T20:01:42.126311Z"
+                writerId: 8tqx94zf3gewdixik914dek1s9sy4cs3
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+            "2":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+            "3":
+                - 2
+                - 16
+            "4": 3.12.11
+            "5": 0.22.2
+            "6": 4.56.0
+            "12": 0.22.2
+            "13": linux-x86_64
+device:
+    value: cuda:7
+height:
+    value: 1024
+model:
+    value: black-forest-labs/FLUX.1-schnell
+negative_prompt:
+    value: ""
+num_inference_steps:
+    value: 1
+prompt:
+    value: popeye the sailor watching something from a distance
+seed:
+    value: 62
+subset:
+    value: copyrights
+variant:
+    value: specific
+width:
+    value: 1024

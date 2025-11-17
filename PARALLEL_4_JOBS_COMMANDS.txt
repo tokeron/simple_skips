@@ -1,0 +1,82 @@
+================================================================================
+COMMANDS TO RUN 4 PARALLEL JOBS - SAMPLE DATASET (60 prompts)
+================================================================================
+
+SETUP:
+------
+Sample dataset has 60 prompts.
+Split into 4 equal parts: 15 prompts each.
+
+
+JOB 1: PROMPTS 0-14
+-------------------
+1. Edit main.py (lines 402-403):
+   start_idx = 0
+   end_idx = 15
+
+2. Submit job:
+   submit_job --partition polar4 --nodes 1 --gpu 1 --duration 4.0 --name flux_sample_job1 -c "/home/mtoker/git/simple_skips/run_main.sh"
+
+
+JOB 2: PROMPTS 15-29
+--------------------
+1. Edit main.py (lines 402-403):
+   start_idx = 15
+   end_idx = 30
+
+2. Submit job:
+   submit_job --partition polar4 --nodes 1 --gpu 1 --duration 4.0 --name flux_sample_job2 -c "/home/mtoker/git/simple_skips/run_main.sh"
+
+
+JOB 3: PROMPTS 30-44
+--------------------
+1. Edit main.py (lines 402-403):
+   start_idx = 30
+   end_idx = 45
+
+2. Submit job:
+   submit_job --partition polar4 --nodes 1 --gpu 1 --duration 4.0 --name flux_sample_job3 -c "/home/mtoker/git/simple_skips/run_main.sh"
+
+
+JOB 4: PROMPTS 45-59
+--------------------
+1. Edit main.py (lines 402-403):
+   start_idx = 45
+   end_idx = None
+
+2. Submit job:
+   submit_job --partition polar4 --nodes 1 --gpu 1 --duration 4.0 --name flux_sample_job4 -c "/home/mtoker/git/simple_skips/run_main.sh"
+
+
+MONITORING:
+-----------
+Check all jobs:
+  squeue -u $USER -o "%.18i %.9P %.20j %.8u %.8T %.10M %.9l %.6D %R"
+
+Check logs (replace TIMESTAMP and JOBID):
+  tail -f /lustre/fsw/portfolios/nvr/users/mtoker/logs/flux_sample_job1_TIMESTAMP/flux_sample_job1_TIMESTAMP/job_JOBID/part_0/run_0/node_0_*/task_0/user.log
+
+
+EXPECTED OUTPUT:
+----------------
+Each job will generate ~300 images:
+- 15 prompts × 20 seeds = 300 images per job
+- Total: 1,200 images (60 prompts × 20 seeds)
+
+Output location:
+  outputs_black-forest-labs/FLUX.1-dev/sample_prompts/
+    ├── animals/
+    ├── celebrities/
+    ├── copyrights/
+    └── places/
+
+
+TIPS:
+-----
+- Submit all 4 jobs at once - they won't conflict
+- The skip mechanism prevents duplicates if ranges overlap
+- Each job takes ~45-60 minutes (depending on GPU availability)
+- Running in parallel completes in ~60 minutes instead of ~4 hours
+
+
+================================================================================

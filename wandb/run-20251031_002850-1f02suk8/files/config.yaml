@@ -1,0 +1,109 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        e:
+            kimbzeciaj7sh7h2h97i8qat9wtmco98:
+                cpu_count: 128
+                cpu_count_logical: 255
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "6746538991616"
+                        used: "78850088960"
+                email: mtoker@nvidia.com
+                executable: /lustre/fsw/portfolios/nvr/users/mtoker/miniconda3/envs/grad_env/bin/python
+                gpu: NVIDIA A100-SXM4-80GB
+                gpu_count: 8
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-a05900bc-0452-4419-c0fb-274be1324aad
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-4c7993e5-9c1c-5a13-3328-657bd09305de
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-1df433b3-c8f9-94eb-313f-68d5df8cb356
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-239745aa-99f9-1573-c696-a5a6a9b29b7d
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-f4373c0d-5b7d-303e-7497-ccc13c20d133
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-30c0e72b-482d-a761-d916-7650e669bb67
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-6507ca6c-c4b4-737d-08b4-0c6cb52cfdcb
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-21a3eb91-76d3-8c25-a6a5-f8c7da8bbdec
+                host: batch-block1-0094
+                memory:
+                    total: "2164258553856"
+                os: Linux-5.15.0-1032-oracle-x86_64-with-glibc2.31
+                program: /home/mtoker/git/simple_skips/sandbox_diffusers/main.py
+                python: CPython 3.12.11
+                root: /lustre/fs12/portfolios/nvr/projects/nvr_israel_persdiff/users/mtoker/git/simple_skips
+                slurm:
+                    conf: /cm/shared/apps/slurm/var/etc/cs-oci-ord/slurm.conf
+                startedAt: "2025-10-31T07:28:50.661461Z"
+                writerId: kimbzeciaj7sh7h2h97i8qat9wtmco98
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+            "2":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+            "3":
+                - 2
+                - 16
+            "4": 3.12.11
+            "5": 0.22.2
+            "6": 4.56.0
+            "12": 0.22.2
+            "13": linux-x86_64
+device:
+    value: cuda:4
+height:
+    value: 512
+model:
+    value: black-forest-labs/FLUX.1-dev
+negative_prompt:
+    value: ""
+num_inference_steps:
+    value: 26
+prompt:
+    value: An image of Paris
+seed:
+    value: 56
+width:
+    value: 512

@@ -1,0 +1,1 @@
+{"variant":"specific","seed":62,"_timestamp":1.7622616859070797e+09,"_wandb":{"runtime":67},"_runtime":67,"_step":2,"image":{"sha256":"9ce7ff9dcbe906c5c3ea61b7b8bb6ce6bdf480fda8e9f2abc4c3c9c7a5ff7a97","size":57699,"path":"media/images/image_2_9ce7ff9dcbe906c5c3ea.jpg","format":"jpg","width":1024,"height":1024,"caption":"places_specific_62","_type":"image-file"},"subset":"places"}

@@ -1,0 +1,83 @@
+{
+  "os": "Linux-5.15.0-1032-oracle-x86_64-with-glibc2.31",
+  "python": "CPython 3.12.11",
+  "startedAt": "2025-11-10T14:10:30.121078Z",
+  "args": [
+    "--model_name",
+    "black-forest-labs/FLUX.1-dev",
+    "--prompts_csv",
+    "/home/mtoker/git/simple_skips/copyrights_10unique_temp.csv",
+    "--generate_original_image",
+    "--do_indirect_effect",
+    "--do_direct_effect_removing_partial",
+    "--do_direct_effect_using_only_partial",
+    "--seeds",
+    "42",
+    "--start_idx",
+    "0",
+    "--end_idx",
+    "10"
+  ],
+  "program": "/home/mtoker/git/simple_skips/sandbox_diffusers/analysis.py",
+  "email": "mtoker@nvidia.com",
+  "root": "/lustre/fs12/portfolios/nvr/projects/nvr_israel_persdiff/users/mtoker/git/simple_skips",
+  "host": "batch-block1-0044",
+  "executable": "/lustre/fsw/portfolios/nvr/users/mtoker/miniconda3/envs/diffusion_env/bin/python",
+  "cpu_count": 128,
+  "cpu_count_logical": 255,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "6746538991616",
+      "used": "59824939008"
+    }
+  },
+  "memory": {
+    "total": "2164258553856"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-ec75df56-1f52-d562-0b06-827ba4cadd85"
+    }
+  ],
+  "cudaVersion": "12.2",
+  "slurm": {
+    "cluster_name": "cs-oci-ord",
+    "conf": "/cm/shared/apps/slurm/var/etc/cs-oci-ord/slurm.conf",
+    "cpus_on_node": "8",
+    "cpus_per_task": "8",
+    "gpus_on_node": "1",
+    "gtids": "0",
+    "job_account": "nvr_israel_persdiff",
+    "job_cpus_per_node": "8",
+    "job_end_time": "1762792558",
+    "job_gid": "30",
+    "job_gpus": "3",
+    "job_name": "flux_analysis_copyrights_10unique_s42",
+    "job_nodelist": "batch-block1-0044",
+    "job_num_nodes": "1",
+    "job_partition": "interactive",
+    "job_qos": "normal",
+    "job_start_time": "1762778158",
+    "job_uid": "149570",
+    "job_user": "mtoker",
+    "nnodes": "1",
+    "node_aliases": "(null)",
+    "nodeid": "0",
+    "nodelist": "batch-block1-0044",
+    "prio_process": "0",
+    "submit_dir": "/lustre/fs12/portfolios/nvr/projects/nvr_israel_persdiff/users/mtoker/git/simple_skips",
+    "submit_host": "batch-block5-00084",
+    "task_pid": "2655650",
+    "tasks_per_node": "1",
+    "topology_addr": "top.nw_00b0043b83efa33ec5eb7ee4e638070a0ef222ed72a8eab9127a0de4eaca6360.rk_0aed78598a21c1258a526b85c3b36a62549b1dc0080942d45410dbcb2487cddb.batch-block1-0044",
+    "topology_addr_pattern": "switch.switch.switch.node",
+    "working_cluster": "cs-oci-ord:cs-oci-ord-a:6817:9984:109"
+  },
+  "writerId": "0u3s3vx4e203rjonnw264bd8upraoh9q"
+}

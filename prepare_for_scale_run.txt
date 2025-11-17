@@ -1,0 +1,241 @@
+================================================================================
+PREPARE FOR SCALE RUN - FLUX IMAGE GENERATION WITH SKIP FUNCTIONALITY
+================================================================================
+
+OVERVIEW:
+---------
+This guide explains how to run the FLUX image generation script on the cluster
+with automatic skipping of already-generated samples. The job can be interrupted
+and resumed, and it will automatically skip existing images.
+
+
+FILES CREATED:
+--------------
+1. /home/mtoker/git/simple_skips/run_main.sh
+   - Wrapper script that sets up environment and runs main.py
+   - Required because the cluster system prepends 'exec' to all commands
+
+
+WRAPPER SCRIPT CONTENT (run_main.sh):
+--------------------------------------
+#!/bin/bash
+export CUDA_VISIBLE_DEVICES=0
+/lustre/fsw/portfolios/nvr/users/mtoker/miniconda3/envs/diffusion_env/bin/python /home/mtoker/git/simple_skips/sandbox_diffusers/main.py
+
+WHY THIS WORKS:
+- Uses full path to Python (no conda activation needed)
+- Sets CUDA_VISIBLE_DEVICES inside the script
+- Can be executed with 'exec' by the cluster system
+
+
+SETUP STEPS:
+------------
+1. Make the wrapper script executable:
+   chmod +x /home/mtoker/git/simple_skips/run_main.sh
+
+2. Verify the script exists:
+   ls -l /home/mtoker/git/simple_skips/run_main.sh
+
+
+SUBMISSION COMMAND:
+-------------------
+submit_job \
+  --partition polar4 \
+  --nodes 1 \
+  --gpu 1 \
+  --duration 4.0 \
+  --name flux_main \
+  -c "/home/mtoker/git/simple_skips/run_main.sh"
+
+
+CODE CHANGES IN main.py:
+-------------------------
+
+1. Modified efficient_inference() method:
+   - Added optional parameter: output_path: str = None
+   - Added file existence check at the beginning:
+   
+     if output_path is not None and os.path.exists(output_path):
+         print(f"Skipping generation - file already exists: {output_path}")
+         return None
+
+2. Updated all call sites to efficient_inference():
+   - Calculate full_path BEFORE calling efficient_inference
+   - Pass output_path=full_path to the function
+   - Check if latents is not None before decoding and saving:
+   
+     latents = pipeline_manager.efficient_inference(
+         prompt_embeds=prompt_embeds,
+         pooled_embeds=pooled_embeds,
+         seed=seed,
+         height=height,
+         width=width,
+         num_inference_steps=num_inference_steps,
+         return_latents=True,
+         output_path=full_path  # ← Pass the path
+     )
+     
+     if latents is not None:  # ← Only process if not skipped
+         image = pipeline_manager._vae_decode(latents, height=height, width=width)
+         image[0].save(full_path)
+
+3. Call sites updated:
+   - Original image generation
+   - Indirect effect experiments
+   - Indirect effect using only partial
+   - Direct effect removing partial
+   - Direct effect using only partial (with Fourier analysis)
+   - Skip K experiments
+
+
+HOW THE SKIP MECHANISM WORKS:
+------------------------------
+1. Before generating each image, construct the output file path
+2. Pass this path to efficient_inference()
+3. Inside efficient_inference(), check if file exists
+4. If exists: return None (skip expensive GPU generation)
+5. If not exists: generate normally and return latents
+6. Caller checks if latents is None before decoding/saving
+7. For wandb logging: check os.path.exists() and log existing images too
+
+
+BENEFITS:
+---------
+✓ No code duplication - single check in one place
+✓ Resumable - can restart interrupted runs
+✓ Efficient - skips expensive GPU computations
+✓ Complete logging - still logs existing files to wandb
+✓ Works with all experiment types
+
+
+MONITORING THE JOB:
+-------------------
+1. Check job status:
+   squeue -u $USER -o "%.18i %.9P %.20j %.8u %.8T %.10M %.9l %.6D %R"
+
+2. Find log directory:
+   ls -lt /lustre/fsw/portfolios/nvr/users/mtoker/logs/ | grep flux_main | head -5
+
+3. Check logs (replace with actual log dir):
+   tail -f /lustre/fsw/portfolios/nvr/users/mtoker/logs/flux_main_TIMESTAMP/flux_main_TIMESTAMP/job_JOBID/part_0/run_0/node_0_*/task_0/user.log
+
+4. Check progress (look for "Processing prompt:" and "Seed:"):
+   grep -E "(Processing prompt:|Seed:)" /path/to/user.log | tail -20
+
+5. Check for skipped files:
+   grep "Skipping generation" /path/to/user.log | wc -l
+
+
+TROUBLESHOOTING:
+----------------
+1. Job fails immediately (< 2 minutes):
+   - Check wrapper script has execute permissions
+   - Verify Python path is correct in wrapper script
+   - Check user.log for error messages
+
+2. No output in user.log:
+   - Job might still be loading models (takes 2-3 minutes initially)
+   - Check wrapper.log to confirm job started
+
+3. Python not found error:
+   - Update Python path in run_main.sh to match your environment:
+     which python  # Run this in interactive session to get correct path
+
+4. CUDA device errors:
+   - Verify CUDA_VISIBLE_DEVICES is set correctly in wrapper script
+   - Check GPU allocation: echo $SLURM_STEP_GPUS
+
+
+SCALING UP:
+-----------
+The script now uses a CSV file with prompts and supports parallel processing.
+
+For parallel execution, you can:
+1. Split by prompt ranges (using start_idx and end_idx in main.py)
+2. Split by seed ranges (modifying the seeds list)
+3. Or both!
+
+Example workflows in the PARALLEL PROCESSING section above.
+
+
+ESTIMATED TIMING:
+-----------------
+- Model loading: ~3 minutes (first time only)
+- Per image generation: ~10-15 seconds (with 26 inference steps)
+- 12 prompts × 20 seeds = 240 images
+- Total runtime: ~40-60 minutes for full run
+
+
+DISK SPACE:
+-----------
+- Each image: ~1-2 MB
+- 240 images: ~240-480 MB
+- Plus wandb logs and Fourier analysis outputs
+
+
+CONFIGURATION IN main.py:
+--------------------------
+Key variables to modify:
+- num_inference_steps = 26  # More steps = better quality, slower
+- seeds = list(range(40, 60))  # Range of seeds to use
+- start_idx = 0  # Starting prompt index for parallel processing
+- end_idx = None  # Ending prompt index (None = process all remaining)
+- do_log_to_wandb = True  # Enable/disable wandb logging
+- height = 1024  # Image height
+- width = 1024  # Image width
+
+Experiment flags (set to True/False):
+- generate_original_image = True
+- do_indirect_effect = False
+- do_indirect_effect_using_only_partial = False
+- do_direct_effect_removing_partial = False
+- do_direct_effect_using_only_partial = False
+- skip_k_experiments = False
+
+
+PARALLEL PROCESSING:
+--------------------
+To run multiple jobs in parallel and split the workload:
+
+The script now loads prompts from a CSV file and supports range-based processing.
+Use start_idx and end_idx to process different chunks.
+
+Example - split 60 prompts across 3 jobs:
+
+Job 1 (prompts 0-19):
+  start_idx = 0
+  end_idx = 20
+
+Job 2 (prompts 20-39):
+  start_idx = 20
+  end_idx = 40
+
+Job 3 (prompts 40-59):
+  start_idx = 40
+  end_idx = None  # or end_idx = 60
+
+Each job processes different prompts, so they won't conflict with each other.
+The skip mechanism ensures no duplicate work even if ranges overlap.
+
+
+IMPORTANT NOTES:
+----------------
+1. The wrapper script uses the FULL path to Python - this avoids conda activation
+2. Always use the wrapper script for batch jobs (not direct Python commands)
+3. The skip mechanism checks file existence BEFORE GPU generation starts
+4. Existing files are still logged to wandb for complete experiment tracking
+5. For direct_effect_using_only_partial: existing images are loaded for Fourier analysis
+
+
+QUICK REFERENCE:
+----------------
+Setup:    chmod +x /home/mtoker/git/simple_skips/run_main.sh
+Submit:   submit_job --partition polar4 --nodes 1 --gpu 1 --duration 4.0 --name flux_main -c "/home/mtoker/git/simple_skips/run_main.sh"
+Monitor:  squeue -u $USER
+Logs:     ls -lt /lustre/fsw/portfolios/nvr/users/mtoker/logs/ | grep flux_main | head
+
+
+================================================================================
+END OF GUIDE
+================================================================================
+

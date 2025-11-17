@@ -1,0 +1,131 @@
+_wandb:
+    value:
+        cli_version: 0.21.1
+        e:
+            5273kik0fno2up78awf54h9jiz75pqmf:
+                args:
+                    - --model_name
+                    - black-forest-labs/FLUX.1-dev
+                    - --prompts_csv
+                    - /home/mtoker/git/simple_skips/sample_prompts_with_placeholders_20_3_42.csv
+                    - --generate_variants
+                    - specific
+                    - --start_idx
+                    - "30"
+                    - --end_idx
+                    - "60"
+                    - --num_inference_steps
+                    - "26"
+                    - --seeds
+                    - 40,41,42,43,44,45,46,47,48,49
+                cpu_count: 128
+                cpu_count_logical: 255
+                cudaVersion: "12.2"
+                disk:
+                    /:
+                        total: "6746538991616"
+                        used: "34596093952"
+                email: mtoker@nvidia.com
+                executable: /lustre/fsw/portfolios/nvr/users/mtoker/miniconda3/envs/diffusion_env/bin/python
+                gpu: NVIDIA A100-SXM4-80GB
+                gpu_count: 8
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-cf6c8f78-52ce-101d-1371-8d35611b7dab
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-8801d021-0735-331d-dfd8-9ebd97b3cef1
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-3019b9a6-48ac-7a8c-acd6-16294fa6f4c0
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-b495fc89-d5d4-98a8-bd0a-ec4a5b86c627
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-23e1f133-4c53-579c-3911-1319f0e9819d
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-7fcb7042-c45c-dfba-9e5d-49d31ee6754a
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-76de815e-dde1-f0c9-724f-d869b3dd0322
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-c9b9b777-fc31-6d92-a24e-efc0db324771
+                host: batch-block4-0027
+                memory:
+                    total: "2164258557952"
+                os: Linux-5.15.0-1032-oracle-x86_64-with-glibc2.31
+                program: /home/mtoker/git/simple_skips/sandbox_diffusers/main.py
+                python: CPython 3.12.11
+                root: /lustre/fs12/portfolios/nvr/projects/nvr_israel_persdiff/users/mtoker/git/simple_skips
+                slurm:
+                    conf: /cm/shared/apps/slurm/var/etc/cs-oci-ord/slurm.conf
+                startedAt: "2025-11-05T08:32:36.997920Z"
+                writerId: 5273kik0fno2up78awf54h9jiz75pqmf
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+                - 105
+            "2":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+                - 105
+            "3":
+                - 2
+                - 16
+                - 24
+            "4": 3.12.11
+            "5": 0.21.1
+            "6": 4.55.0
+            "12": 0.21.1
+            "13": linux-x86_64
+device:
+    value: cuda
+height:
+    value: 1024
+model:
+    value: black-forest-labs/FLUX.1-dev
+negative_prompt:
+    value: ""
+num_inference_steps:
+    value: 26
+prompt:
+    value: a raccoon playing in the mud
+seed:
+    value: 40
+subset:
+    value: animals
+variant:
+    value: specific
+width:
+    value: 1024

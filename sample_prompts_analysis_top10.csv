@@ -1,0 +1,11 @@
+subset,item_index,extension_index,original_item,placeholder,prompt_extension,prompt_specific,prompt_placeholder
+animals,6,3,a donkey,an animal,walking along a riverbank,a donkey walking along a riverbank,an animal walking along a riverbank
+animals,7,11,a horse,an animal,playing in the mud,a horse playing in the mud,an animal playing in the mud
+animals,7,19,a horse,an animal,in pixel art form,a horse in pixel art form,an animal in pixel art form
+animals,7,8,a horse,an animal,made of plastic,a horse made of plastic,an animal made of plastic
+animals,8,1,a wolf,an animal,looking up curiously,a wolf looking up curiously,an animal looking up curiously
+animals,8,14,a wolf,an animal,made of clay,a wolf made of clay,an animal made of clay
+animals,8,17,a wolf,an animal,under the rain,a wolf under the rain,an animal under the rain
+animals,9,3,a penguin,an animal,walking along a riverbank,a penguin walking along a riverbank,an animal walking along a riverbank
+animals,9,12,a penguin,an animal,wet after a rainstorm,a penguin wet after a rainstorm,an animal wet after a rainstorm
+animals,9,2,a penguin,an animal,hunting for food,a penguin hunting for food,an animal hunting for food

@@ -1,0 +1,11 @@
+subset,item_index,extension_index,original_item,placeholder,prompt_extension,prompt_specific,prompt_placeholder
+animals,3,5,a camel,an animal,as a statue in an ancient temple,a camel as a statue in an ancient temple,an animal as a statue in an ancient temple
+animals,3,13,a camel,an animal,in origami style,a camel in origami style,an animal in origami style
+animals,4,10,a tiger,an animal,drinking water from a lake,a tiger drinking water from a lake,an animal drinking water from a lake
+animals,4,8,a tiger,an animal,made of plastic,a tiger made of plastic,an animal made of plastic
+animals,4,4,a tiger,an animal,as a lego sculpture,a tiger as a lego sculpture,an animal as a lego sculpture
+animals,5,6,a giraffe,an animal,looking surprised,a giraffe looking surprised,an animal looking surprised
+animals,5,10,a giraffe,an animal,drinking water from a lake,a giraffe drinking water from a lake,an animal drinking water from a lake
+animals,5,3,a giraffe,an animal,walking along a riverbank,a giraffe walking along a riverbank,an animal walking along a riverbank
+animals,6,2,a donkey,an animal,hunting for food,a donkey hunting for food,an animal hunting for food
+animals,6,12,a donkey,an animal,wet after a rainstorm,a donkey wet after a rainstorm,an animal wet after a rainstorm

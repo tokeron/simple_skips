@@ -1,0 +1,57 @@
+_wandb:
+    value:
+        cli_version: 0.21.1
+        e:
+            d926qz3eg1p4d2yjjcqarnwih6im6q5d:
+                email: mtoker@nvidia.com
+                executable: /lustre/fsw/portfolios/nvr/users/mtoker/miniconda3/envs/diffusion_env/bin/python
+                host: batch-block5-01152
+                os: Linux-5.15.0-1032-oracle-x86_64-with-glibc2.35
+                program: /home/mtoker/git/simple_skips/sandbox_diffusers/main.py
+                python: CPython 3.12.11
+                root: /lustre/fs12/portfolios/nvr/projects/nvr_israel_persdiff/users/mtoker/git/simple_skips
+                startedAt: "2025-11-01T18:27:23.342607Z"
+                writerId: d926qz3eg1p4d2yjjcqarnwih6im6q5d
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+                - 105
+            "2":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+                - 105
+            "3":
+                - 2
+                - 16
+            "4": 3.12.11
+            "5": 0.21.1
+            "6": 4.55.0
+            "12": 0.21.1
+            "13": linux-x86_64
+device:
+    value: cuda
+height:
+    value: 1024
+model:
+    value: black-forest-labs/FLUX.1-dev
+negative_prompt:
+    value: ""
+num_inference_steps:
+    value: 26
+prompt:
+    value: wearing a leather jacket
+seed:
+    value: 40
+width:
+    value: 1024

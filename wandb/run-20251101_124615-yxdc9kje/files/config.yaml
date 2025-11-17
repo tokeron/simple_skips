@@ -1,0 +1,136 @@
+_wandb:
+    value:
+        cli_version: 0.21.1
+        e:
+            6yeb83210v9xjoiw4rg6pt16f3baujzv:
+                cpu_count: 128
+                cpu_count_logical: 255
+                cudaVersion: "12.5"
+                disk:
+                    /:
+                        total: "20321311363072"
+                        used: "112564293632"
+                email: mtoker@nvidia.com
+                executable: /lustre/fsw/portfolios/nvr/users/mtoker/miniconda3/envs/diffusion_env/bin/python
+                gpu: NVIDIA A100-SXM4-80GB
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 6912
+                      memoryTotal: "85899345920"
+                      name: NVIDIA A100-SXM4-80GB
+                      uuid: GPU-0af3a4b3-ba0e-b86e-4685-38e2fad6f572
+                host: batch-block5-00960
+                memory:
+                    total: "2164258553856"
+                os: Linux-5.15.0-1032-oracle-x86_64-with-glibc2.35
+                program: /home/mtoker/git/simple_skips/sandbox_diffusers/main.py
+                python: CPython 3.12.11
+                root: /lustre/fs12/portfolios/nvr/projects/nvr_israel_persdiff/users/mtoker/git/simple_skips
+                slurm:
+                    cluster_name: cs-oci-ord
+                    conf: /cm/shared/apps/slurm/var/etc/cs-oci-ord/slurm.conf
+                    cpu_bind: quiet,mask_cpu:0x00000000000000000FFFF0000000000000000000000000000FFFC00000000000
+                    cpu_bind_list: 0x00000000000000000FFFF0000000000000000000000000000FFFC00000000000
+                    cpu_bind_type: 'mask_cpu:'
+                    cpu_bind_verbose: quiet
+                    cpu_freq_req: Performance
+                    cpus_on_node: "30"
+                    cpus_per_task: "30"
+                    distribution: cyclic
+                    do_autoreboot: "0"
+                    gpus_on_node: "1"
+                    gtids: "0"
+                    job_account: nvr_israel_persdiff
+                    job_cpus_per_node: "30"
+                    job_end_time: "1762015197"
+                    job_gid: "30"
+                    job_gpus: "5"
+                    job_id: "18730414"
+                    job_name: flux_main_test_20251101-053952
+                    job_nodelist: batch-block5-00960
+                    job_num_nodes: "1"
+                    job_partition: polar4
+                    job_qos: normal
+                    job_start_time: "1762000797"
+                    job_uid: "149570"
+                    job_user: mtoker
+                    jobid: "18730414"
+                    launch_node_ipaddr: 10.49.163.126
+                    localid: "0"
+                    mem_per_node: "230400"
+                    mpi_type: pmix
+                    nnodes: "1"
+                    nodeid: "0"
+                    nodelist: batch-block5-00960
+                    nprocs: "1"
+                    ntasks: "1"
+                    ntasks_per_node: "1"
+                    open_mode: a
+                    pmix_mapping_serv: (vector,(0,1,1))
+                    pmixp_abort_agent_port: "36339"
+                    prio_process: "0"
+                    procid: "0"
+                    srun_comm_host: 10.49.163.126
+                    srun_comm_port: "22665"
+                    step_gpus: "5"
+                    step_id: "0"
+                    step_launcher_port: "22665"
+                    step_nodelist: batch-block5-00960
+                    step_num_nodes: "1"
+                    step_num_tasks: "1"
+                    step_tasks_per_node: "1"
+                    stepid: "0"
+                    submit_dir: /lustre/fs12/portfolios/nvr/projects/nvr_israel_persdiff/users/mtoker/git/simple_skips
+                    submit_host: batch-block1-0044
+                    task_pid: "823695"
+                    tasks_per_node: "1"
+                    topology_addr: top.nw_3211a72f769f70bbf271a68b800ed47d920eef739f7a320a59d7e1064a90c8ec.rk_05585a5abc118155182ed7f4b186051d749f7d607f15d130d2c5caa2335d9069.batch-block5-00960
+                    topology_addr_pattern: switch.switch.switch.node
+                    umask: "0022"
+                    working_cluster: cs-oci-ord:cs-oci-ord-a:6817:9984:109
+                startedAt: "2025-11-01T12:46:15.930376Z"
+                writerId: 6yeb83210v9xjoiw4rg6pt16f3baujzv
+        m: []
+        python_version: 3.12.11
+        t:
+            "1":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+                - 105
+            "2":
+                - 1
+                - 11
+                - 41
+                - 49
+                - 71
+                - 83
+                - 105
+            "3":
+                - 2
+                - 16
+            "4": 3.12.11
+            "5": 0.21.1
+            "6": 4.55.0
+            "12": 0.21.1
+            "13": linux-x86_64
+device:
+    value: cuda
+height:
+    value: 1024
+model:
+    value: black-forest-labs/FLUX.1-dev
+negative_prompt:
+    value: ""
+num_inference_steps:
+    value: 26
+prompt:
+    value: A tower surrounded by cherry blossoms
+seed:
+    value: 53
+width:
+    value: 1024
