@@ -67,3 +67,4 @@ checkpoints/
 .DS_Store
 Thumbs.db
 
+wandb/
